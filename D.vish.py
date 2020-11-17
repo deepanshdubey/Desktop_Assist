@@ -4,10 +4,7 @@ import datetime
 import wikipedia #pip install wikipedia
 import webbrowser
 import smtplib
-import webbrowser as wb
 from PIL import Image
-
-wb.register('chrome',None)
 
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
@@ -94,6 +91,9 @@ if __name__ == "__main__":
 
         elif 'open coderg' in query:
             wb.open("coderg.herokuapp.com")
+            
+        elif 'tell something' in query:
+            print("Go get some job MAN")
 
         elif 'quit' in query:
             speak("Thanks for using this tiny software. Take care! Goodbye.")
